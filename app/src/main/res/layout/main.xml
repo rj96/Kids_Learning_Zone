@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_undo"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:backgroundTint="#D60B0B"
+                android:text="@string/undo"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:text="@string/submit"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <com.example.kids_learning_zone.DrawView
+            android:id="@+id/draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="500"
+             />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/rounder_corner"
+            android:text="Result"
+            android:textAlignment="center"
+            android:textSize="96sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

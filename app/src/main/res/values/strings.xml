@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kids_Learning_Zone</string>
+    <string name="undo">Undo</string>
+    <string name="submit">Submit</string>
+</resources>
